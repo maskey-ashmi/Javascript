@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashmi-ColorSwitch</title>
+    <link rel="stylesheet" href="colorSwitch.css">
+</head>
+<body>
+     <h1>Color Switcher</h1>
+
+
+   <!--  <div class="btn-container">
+    <button id="redbtn" onclick="changeRed()">Red</button>
+    <button id = "greenbtn" onclick="changeGreen()">Green</button>
+    <button id = "blackbtn" onclick="changeBlack()">Black</button>
+    <button id = "whitebtn" onclick="changeWhite()">White</button>
+    </div>
+    <script>
+        function changeRed() {
+            document.body.style.backgroundColor = "red";
+        }
+        function changeGreen() {
+            document.body.style.backgroundColor = "green";
+        }
+        function changeBlack() {
+            document.body.style.backgroundColor = "black";
+        }
+        function changeWhite(){
+            document.body.style.backgroundColor = "white";
+        }
+
+    </script> -->
+  
+    <div class="btn-container">
+        <button id="redbtn">Red</button>
+        <button id = "greenbtn">Green</button>
+        <button id = "blackbtn">Black</button>
+        <button id = "peachbtn">Peach</button>
+    </div>
+    <script>
+        const buttons = document.querySelectorAll('.btn-container button');
+        const body = document.querySelector('body');
+
+        buttons.forEach(function (button){
+            button.addEventListener('click', function(e){
+                if(e.target.id === 'redbtn'){
+                    body.style.backgroundColor = 'red';
+                }
+                else if(e.target.id === 'greenbtn'){
+                    body.style.backgroundColor = 'green';
+                }
+                else if(e.target.id === 'blackbtn'){
+                    body.style.backgroundColor = 'black';
+                }
+                else if(e.target.id === 'peachbtn'){
+                    body.style.backgroundColor = 'peachpuff';
+                }
+            })
+        }
+        );
+    </script>
+</body>
+</html>
