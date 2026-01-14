@@ -1,0 +1,51 @@
+.input-group {
+    padding: 16px;
+    border: 2px solid #ccc;
+     display: flex;
+    flex-direction: column; /* stack children vertically */
+    align-items: center;    /* center horizontally */ 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    margin-bottom: 16px;
+}
+p{
+    font-size: 18px;
+}
+
+#btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+input[type="number"] { /* input element ma type (attr) = number (exact match) filter garne*/
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+#result{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
